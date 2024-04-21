@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    scrollbar-color: #5c5c5c black;
+    scrollbar-width: thin;
+}
+
+body {
+    background-color: #262626;
+}
+
+/* Webkit (Safari, Chrome) */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+/* Firefox */
+/* Make sure you include the scrollbar color changes for Firefox */
+/* Because Firefox uses its own scrollbar styles */
+/* You may need to use vendor prefixes for older versions */
+/* For the sake of brevity, I'm including the non-prefixed version */
+/* For a production environment, you should include prefixed versions */
+/* More information: https://developer.mozilla.org/en-US/docs/Web/CSS/::-moz-scrollbar */
